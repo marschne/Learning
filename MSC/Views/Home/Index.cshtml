@@ -1,0 +1,84 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "MSC Page";
+}
+
+<link rel="stylesheet" href="~/css/breakpoint.css" />
+
+<div class="box mb-5">
+
+</div>
+
+<div class="form-row gap-2">
+    <div class="row">
+        <div class="col">
+            @if (Model.Parameter.Vorname != null)
+            {
+                <input id="vorname" class="form-control"
+                       change-color="true"
+                       type="search"
+                       value="@Model.Parameter.Vorname" />
+            }
+        </div>
+        <div class="col">
+            @if (Model.Parameter.Nachname != null)
+            {
+                <input id="nachname" class="form-control"
+                       change-color="true"
+                       type="search"
+                       value="@Model.Parameter.Nachname" />
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            @if (Model.User.Username != null)
+            {
+                <input id="username" class="form-control"
+                       change-color="true"
+                       type="search"
+                       value="@Model.User.Username" />
+            }
+        </div>
+        <div class="col">
+            @if (Model.User.Password != null)
+            {
+                <input id="password" class="form-control"
+                       change-color="true"
+                       type="search"
+                       value="@Model.User.Password" />
+             }
+        </div>
+    </div>
+</div>
+
+<div class="mt-5">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Anrede</th>
+                <th>Vorname</th>
+                <th>Nachname</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in @Model.Personen)
+            {
+                <tr>
+                    <td>@person.Anrede</td>
+                    <td>@person.Vorname</td>
+                    <td>@person.Nachname</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section scripts {
+    <script type="text/javascript">$(function () {
+        $(document).on("click", "tr.rows td", function (e) {
+            console.debug(e.target.innerHTML);
+        });
+    })</script>
+}

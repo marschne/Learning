@@ -1,0 +1,56 @@
+﻿:root {
+    --bs-body-bg: #303030;
+}
+html {
+    font-size: 16px;
+    background-color: #303030;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.div1 {
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.divRed {
+    background-color: red;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.divGreen {
+    background-color: green;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.divBlue {
+    background-color: blue;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.divGrey {
+    background-color: grey;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.table, th {
+    color: beige;
+}
+
+.table, td {
+    color: aqua;
+}

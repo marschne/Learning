@@ -1,0 +1,43 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MSC/1.0.0": {
+        "dependencies": {
+          "bootstrap": "5.2.3",
+          "jQuery": "3.6.3"
+        },
+        "runtime": {
+          "MSC.dll": {}
+        }
+      },
+      "bootstrap/5.2.3": {},
+      "jQuery/3.6.3": {}
+    }
+  },
+  "libraries": {
+    "MSC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bootstrap/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tZZrH4HdqBr/oeUlGoc2KliYlwXeN3qyhKgc1B5dc585+lnMkcD4A5yIX2NmNoXCCagQQiQGKn7A97sWoo2AOw==",
+      "path": "bootstrap/5.2.3",
+      "hashPath": "bootstrap.5.2.3.nupkg.sha512"
+    },
+    "jQuery/3.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v87yTa8y+t642SsUBRl+XSFg1+zkMfRMd3aO714aYL+AwVxglV7tcW7ZoL4BgwczXev8ge+0kNQBj2rWdyI+dQ==",
+      "path": "jquery/3.6.3",
+      "hashPath": "jquery.3.6.3.nupkg.sha512"
+    }
+  }
+}
